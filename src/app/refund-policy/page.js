@@ -1,9 +1,16 @@
-import React from 'react'
+import Navbar from "../Components/Navbar";
+import RefundPolicy from "../Components/refundpolicy";
+import DisclaimerBar from "../Components/Disclaimer";
+import Footer from "../Components/footer";
 
-const page = () => {
+export default function Home() {
   return (
-    <div>refund-policy</div>
-  )
+    <>
+      <Navbar />
+      <RefundPolicy/>
+      <DisclaimerBar/>
+      
+      <Footer />
+    </>
+  );
 }
-
-export default page

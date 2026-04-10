@@ -8,13 +8,7 @@ export default function AboutUs() {
       {/* Container Same as Navbar Width */}
       <div className="max-w-7xl mx-auto px-3">
         
-        {/* Breadcrumb */}
-        <div className="text-sm text-gray-500 mb-3">
-          Home <span className="mx-2">{">>"}</span>
-          <span className="bg-orange-400 bg-clip-text text-transparent font-medium">
-            About Us
-          </span>
-        </div>
+        
 
         {/* Badge */}
         

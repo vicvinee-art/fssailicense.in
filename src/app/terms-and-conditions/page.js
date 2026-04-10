@@ -1,9 +1,16 @@
-import React from 'react'
+import Navbar from "../Components/Navbar";
+import TermsConditions from "../Components/termncondition";
+import DisclaimerBar from "../Components/Disclaimer";
+import Footer from "../Components/footer";
 
-const page = () => {
+export default function Home() {
   return (
-    <div>terms-and-conditions</div>
-  )
+    <>
+      <Navbar />
+      <TermsConditions/>
+      <DisclaimerBar/>
+      
+      <Footer />
+    </>
+  );
 }
-
-export default page

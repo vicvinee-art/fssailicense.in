@@ -6,7 +6,7 @@ export default function Hero() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    mobile: "",
+    phone: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -18,9 +18,9 @@ export default function Hero() {
     if (name === "name") {
       const onlyLetters = value.replace(/[^a-zA-Z\s]/g, "");
       setFormData({ ...formData, name: onlyLetters });
-    } else if (name === "mobile") {
+    } else if (name === "phone") {
       const onlyNumbers = value.replace(/\D/g, "").slice(0, 10);
-      setFormData({ ...formData, mobile: onlyNumbers });
+      setFormData({ ...formData, phone: onlyNumbers });
     } else {
       setFormData({ ...formData, [name]: value });
     }
@@ -42,7 +42,7 @@ export default function Hero() {
 
       if (res.ok) {
         setMessage("Request submitted successfully!");
-        setFormData({ name: "", email: "", mobile: "" });
+        setFormData({ name: "", email: "", phone: "" });
       } else {
         setMessage(data.message || "Something went wrong.");
       }
@@ -137,9 +137,9 @@ export default function Hero() {
         </label>
         <input
           type="tel"
-          name="mobile"
+          name="phone"
           required
-          value={formData.mobile}
+          value={formData.phone}
           onChange={handleChange}
           placeholder="Enter 10-digit mobile number"
           className="w-full border border-gray-300 rounded-lg px-4 py-3 

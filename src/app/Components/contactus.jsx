@@ -91,13 +91,40 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4">
 
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-orange-500">
-            Contact FssaiLicense.in – We’re Here To Help
-          </h2>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Fill out the form below or schedule a meeting with us at your convenience.
-          </p>
-        </div>
+  <h2 className="text-4xl font-bold text-orange-500">
+    Contact FssaiLicense.in – We’re Here To Help
+  </h2>
+
+  <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+    Get in touch with us via email, phone, or by filling out the form to
+    discover how{" "}
+    <span className="text-orange-500 font-medium">
+      fssailicence.in
+    </span>{" "}
+    can solve your licensing challenges.
+  </p>
+
+  <div className="mt-6 space-y-2 text-gray-800 font-medium">
+    <p>
+      📧{" "}
+      <a
+        href="mailto:info@fssailicence.in"
+        className="text-blue-600 hover:underline"
+      >
+        info@fssailicence.in
+      </a>
+    </p>
+    <p>
+      📞{" "}
+      <a
+        href="tel:+919910774687"
+        className="text-blue-600 hover:underline"
+      >
+        +91 99107 74687
+      </a>
+    </p>
+  </div>
+</div>
 
         <div className="grid md:grid-cols-2 gap-10">
 
@@ -119,7 +146,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Your full name"
                   required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-2xl font-semibold text-gray-800 focus:ring-2 focus:ring-orange-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-xl font-semibold text-gray-800 focus:ring-2 focus:ring-orange-500"
                 />
                 {errors.name && (
                   <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -134,7 +161,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="example@email.com"
                 required
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-2xl font-semibold text-gray-800 focus:ring-2 focus:ring-orange-500"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-xl font-semibold text-gray-800 focus:ring-2 focus:ring-orange-500"
               />
 
               {/* Phone */}
@@ -147,7 +174,7 @@ const Contact = () => {
                   placeholder="9876543210"
                   required
                   maxLength={10}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-2xl font-semibold text-gray-800 focus:ring-2 focus:ring-orange-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 text-xl font-semibold text-gray-800 focus:ring-2 focus:ring-orange-500"
                 />
                 {errors.phone && (
                   <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
@@ -160,7 +187,7 @@ const Contact = () => {
                 value={formData.service}
                 onChange={handleChange}
                 required
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-2xl font-semibold text-gray-800 focus:ring-2 focus:ring-orange-500"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-xl font-semibold text-gray-800 focus:ring-2 focus:ring-orange-500"
               >
                 <option value="">Select a service</option>
                 <option>FSSAI Registration</option>
@@ -216,13 +243,13 @@ const Contact = () => {
                   title: "Patna Office",
                   address:
                     "Anju Niwas, Nagina Vatika, Danapur, Near Crescent Garden,Rukanpura Patna 800014",
-                  phone: "+91 99107 92080",
+                  phone: "+91 9999704687",
                 },
                 {
                   title: "Mumbai Office",
                   address:
                     "712, Shivai Plaza, 7th Floor, Marol Industrial Co-operative, Andheri-Kurla Road, Andheri (East), Mumbai 400059",
-                  phone: "+91 99107 92080",
+                  phone: "+91 9999704687",
                 },
                 {
                   title: "Lucknow Office",

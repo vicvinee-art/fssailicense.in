@@ -1,9 +1,16 @@
-import React from 'react'
+import Navbar from "../Components/Navbar";
+import PrivacyPolicy from "../Components/privacypolicy";
+import DisclaimerBar from "../Components/Disclaimer";
+import Footer from "../Components/footer";
 
-const page = () => {
+export default function Home() {
   return (
-    <div>privacy-policy</div>
-  )
+    <>
+      <Navbar />
+      <PrivacyPolicy/>
+      <DisclaimerBar/>
+      
+      <Footer />
+    </>
+  );
 }
-
-export default page

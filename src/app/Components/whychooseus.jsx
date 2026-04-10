@@ -35,7 +35,7 @@ export default function WhyChooseUs() {
 
             {/* Content */}
             <p className="text-gray-600 text-lg leading-relaxed">
-              FSSAILicence.co.in has helped numerous food businesses obtain their 
+              FssaiLicense.in has helped numerous food businesses obtain their 
               FSSAI Licence quickly and efficiently. We offer expert consultancy 
               services at affordable charges. Our professional team assists you 
               from documentation and application filing to final licence approval. 

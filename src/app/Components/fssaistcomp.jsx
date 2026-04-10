@@ -1,5 +1,5 @@
-import { TrendingUp, Smile, ShoppingCart, ShieldCheck, Handshake } from "lucide-react";
-import { FaCheckCircle, FaUtensils, FaStore, FaCalendarAlt, FaHotel } from "react-icons/fa";
+import { TrendingUp, Smile, ShoppingCart, ShieldCheck, Handshake, Heart } from "lucide-react";
+import { FaCheckCircle, FaUtensils, FaStore, FaCalendarAlt, FaHotel, FaIndustry, } from "react-icons/fa";
 import Contact from "./subpageconsultation";
 import Link from "next/link";
 
@@ -27,7 +27,7 @@ export default function FssaiStateLicense() {
                 with the objective of providing safe and wholesome food to consumers in India.
                 The slogan of FSSAI,
                 <span className="font-semibold text-orange-600"> "Sahi Bhojan. Behtar Jeevan."</span>
-                reflects its commitment towards food safety.
+                reflects its commitment towards food safety.License for commencing or carrying on food business, which are not covered under Schedule 1, shall be granted by the concerned State/UT’s Licensing Authority. FSSAI provides a State License on the basis of satisfying certain criteria.
               </p>
 
               {/* Sections */}
@@ -35,7 +35,7 @@ export default function FssaiStateLicense() {
                 {
   title: "Eligibility for FSSAI State License",
   content: (
-    <div className="grid md:grid-cols-3 gap-6 mt-6">
+    <div className="grid md:grid-cols-2 gap-6 mt-6">
 
       {/* Card 1 */}
       <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
@@ -49,7 +49,7 @@ export default function FssaiStateLicense() {
         </h3>
 
         <p className="text-gray-600 text-sm">
-          Food businesses with turnover between ₹12 lakhs and ₹20 crores.
+          Any businesses dealing in food whose turnover is ₹12 lakhs to ₹20 crores.
         </p>
 
       </div>
@@ -66,7 +66,7 @@ export default function FssaiStateLicense() {
         </h3>
 
         <p className="text-gray-600 text-sm">
-          All cereals, grains, and pulses milling units without capacity limits.
+          All cereals, grains, pulses milling units without any capacity are liable for a State Licence.
         </p>
 
       </div>
@@ -83,51 +83,145 @@ export default function FssaiStateLicense() {
         </h3>
 
         <p className="text-gray-600 text-sm">
-          Businesses operating in one state only.
+          Running its business in one state only, subject to eligibility criteria.
         </p>
+
+      </div>
+
+      {/* Card 4 */}
+      <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 text-left shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        
+        <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-orange-200 mb-4">
+          <FaIndustry className="text-orange-600 text-2xl" />
+        </div>
+
+        <h3 className="font-semibold text-lg mb-3 text-gray-800 text-center">
+          Medium Scale Business Capacity
+        </h3>
+
+        <ul className="text-gray-600 text-sm space-y-1 list-disc pl-5">
+          <li>Food production (other than milk & meat): 1 MT to 2 MT per day</li>
+          <li>Milk procurement: 501 to 50,000 litres/day and &lt; 2500 MT milk solids/year</li>
+          <li>Slaughter: &lt; 50 large animals or &lt; 150 small animals or &lt; 1000 poultry/day</li>
+          <li>Storage: Up to 10,000 MT</li>
+          <li>Transportation: Not more than 100 vehicles</li>
+          <li>Hotels: 1 to 4 star rating</li>
+        </ul>
 
       </div>
 
     </div>
   ),
 },
-                {
-  title: "Procedures for Obtaining FSSAI State License",
+               {
+  title: "Procedures for Obtaining FSSAI State Licence",
   content: (
-    <div className="relative max-w-5xl mx-auto py-14">
+    <div className="max-w-5xl mx-auto pt-10 md:pt-14 pb-20 md:pb-28 relative">
 
-      {/* Left Heading */}
-      <div className="absolute left-0 top-1/3 text-gray-700 font-semibold text-lg hidden md:block">
+      {/* LEFT HEADING (Desktop Only) */}
+      <div className="hidden md:block absolute left-0 top-1/3 text-gray-700 font-semibold text-lg">
         Certification <br /> Process
       </div>
 
-      {/* Curved Path */}
-      <svg
-        className="absolute left-18 top-0 h-full"
-        width="160"
-        height="750"
-        viewBox="0 0 160 750"
-        fill="none"
-      >
-        <path
-          d="M80 0 C10 90,150 140,80 240 S10 380,80 480 S150 620,80 740"
-          stroke="#9CA3AF"
-          strokeWidth="3"
-          strokeDasharray="8 8"
-          fill="transparent"
-        />
-      </svg>
+      {/* ================= DESKTOP VIEW ================= */}
+      <div className="hidden md:block relative">
 
-      {/* Steps */}
-      <div className="ml-44 space-y-11">
+        {/* SVG PATH */}
+        <svg
+          className="absolute left-20 top-0 h-full"
+          width="160"
+          height="600"
+          viewBox="0 0 160 600"
+          fill="none"
+        >
+          <path
+            d="M80 20 
+               C20 80,140 120,80 180 
+               S20 280,80 340 
+               S140 440,80 520"
+            stroke="#9CA3AF"
+            strokeWidth="3"
+            strokeDasharray="8 8"
+            fill="transparent"
+          />
+        </svg>
+
+        {/* STEPS */}
+        <div className="ml-44 space-y-14 mb-10">
+
+          {[
+            "a. Food Business Operators (FBOs) can get an FSSAI State License online by filing and submitting FORM-B on the FoSCoS portal. FBOs can also register offline by submitting FORM-B to the Food and Safety Department.",
+            "b. The FSSAI State Licence form must be accompanied by the required documents and submitted online on the portal at the time of filing (Physical submission required only if the authority asks).",
+            "c. The FSSAI State Licence application can be accepted or rejected by the department within 60 working days from the date of application. If rejected, it has to be intimated to the applicant in writing.",
+            "d. Department will scrutinise the documents submitted by the Food Business Operators (FBOs).",
+            "e. The Department may conduct a physical inspection of the food premises if necessary, before granting the FSSAI State Licence Certificate.",
+            "f. If the Department is satisfied that the Food Business Operator (FBO) has complied with all criteria, then it will grant the FSSAI State Licence Certificate, and the Food Business Operator can download that certificate from the portal.",
+            "g. Food Business Operators (FBOs) must display that certificate at the place of business.",
+          ].map((step, index) => {
+
+            const colors = [
+              "bg-red-500",
+              "bg-orange-500",
+              "bg-green-500",
+              "bg-yellow-500",
+              "bg-indigo-500",
+              "bg-blue-500",
+              "bg-purple-500",
+            ];
+
+            const bgColors = [
+              "bg-red-100",
+              "bg-orange-100",
+              "bg-green-100",
+              "bg-yellow-100",
+              "bg-indigo-100",
+              "bg-blue-100",
+              "bg-purple-100",
+            ];
+
+            return (
+              <div
+                key={index}
+                className={`flex items-center ${
+                  index % 2 === 0 ? "justify-start" : "justify-end"
+                }`}
+              >
+                <div className="flex items-start gap-4 max-w-lg">
+
+                  {/* CIRCLE */}
+                  <div
+                    className={`w-10 h-10 flex items-center justify-center rounded-full text-white font-bold shadow shrink-0 ${colors[index]}`}
+                  >
+                    {index + 1}
+                  </div>
+
+                  {/* TEXT */}
+                  <div
+                    className={`px-6 py-4 rounded-xl shadow-md ${bgColors[index]} w-full`}
+                  >
+                    <p className="text-gray-800 font-medium text-base leading-relaxed">
+                      {step}
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* ================= MOBILE VIEW ================= */}
+      <div className="block md:hidden space-y-6">
 
         {[
-          "Visit the FoSCoS Portal",
-          "Fill FORM-B",
-          "Upload Required Documents",
-          "Pay Applicable Fees",
-          "Application Review & Inspection",
-          "License must be displayed at business premises",
+          "a. Food Business Operators (FBOs) can get an FSSAI State License online by filing and submitting FORM-B on the FoSCoS portal. FBOs can also register offline by submitting FORM-B to the Food and Safety Department.",
+          "b. The FSSAI State Licence form must be accompanied by the required documents and submitted online on the portal at the time of filing (Physical submission required only if the authority asks).",
+          "c. The FSSAI State Licence application can be accepted or rejected by the department within 60 working days from the date of application.",
+          "d. Department will scrutinise the documents submitted by the Food Business Operators (FBOs).",
+          "e. The Department may conduct a physical inspection of the food premises if necessary, before granting the FSSAI State Licence Certificate.",
+          "f. If satisfied, the department grants the FSSAI State Licence Certificate which can be downloaded from the portal.",
+          "g. Food Business Operators (FBOs) must display that certificate at the place of business.",
         ].map((step, index) => {
 
           const colors = [
@@ -137,6 +231,7 @@ export default function FssaiStateLicense() {
             "bg-yellow-500",
             "bg-indigo-500",
             "bg-blue-500",
+            "bg-purple-500",
           ];
 
           const bgColors = [
@@ -146,116 +241,159 @@ export default function FssaiStateLicense() {
             "bg-yellow-100",
             "bg-indigo-100",
             "bg-blue-100",
+            "bg-purple-100",
           ];
 
           return (
-            <div key={index} className="flex items-center gap-6">
+            <div key={index} className="flex items-start gap-4">
 
-              {/* Step Circle */}
+              {/* CIRCLE */}
               <div
-                className={`w-10 h-10 flex items-center justify-center rounded-full text-white font-bold ${colors[index]} shadow`}
+                className={`w-9 h-9 flex items-center justify-center rounded-full text-white font-bold shadow shrink-0 ${colors[index]}`}
               >
                 {index + 1}
               </div>
 
-              {/* Step Bubble */}
+              {/* TEXT */}
               <div
-                className={`px-6 py-4 rounded-full shadow-md ${bgColors[index]} hover:shadow-lg transition`}
+                className={`px-4 py-3 rounded-xl shadow-md ${bgColors[index]} w-full`}
               >
-                <p className="text-gray-800 font-medium">{step}</p>
+                <p className="text-gray-800 font-medium text-sm leading-relaxed">
+                  {step}
+                </p>
               </div>
 
             </div>
           );
         })}
       </div>
+
     </div>
   ),
 },
                 {
-                  title: "Advantages And Benefits of FSSAI State License",
-                  content: (
-                    <div className="mt-12">
-                      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+  title: "Advantages And Benefits of FSSAI State License",
+  content: (
+    <div className="mt-12">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                        {[
-                          {
-                            title: "Enhances Goodwill",
-                            description: "Strengthens business reputation.",
-                            color: "green",
-                            icon: <TrendingUp size={28} />,
-                          },
-                          {
-                            title: "Customer Satisfaction",
-                            description: "Builds consumer trust.",
-                            color: "orange",
-                            icon: <Smile size={28} />,
-                          },
-                          {
-                            title: "Easy Listing",
-                            description: "Required for online platforms.",
-                            color: "green",
-                            icon: <ShoppingCart size={28} />,
-                          },
-                          {
-                            title: "Quality Compliance",
-                            description: "Maintains hygiene standards.",
-                            color: "orange",
-                            icon: <ShieldCheck size={28} />,
-                          },
-                          {
-                            title: "Boosts Confidence",
-                            description: "Demonstrates regulatory compliance.",
-                            color: "green",
-                            icon: <Handshake size={28} />,
-                          },
-                        ].map((feature, index) => (
-                          <div key={index} className="relative">
+        {[
+          {
+            title: "Enhances Goodwill",
+            description: "Goodwill of the business will be enhanced.",
+            color: "green",
+            icon: <TrendingUp size={28} />,
+          },
+          {
+            title: "Customer Satisfaction",
+            description: "Customers' preferences and satisfaction will also be enhanced.",
+            color: "orange",
+            icon: <Smile size={28} />,
+          },
+          {
+            title: "Easy E-commerce Listing",
+            description:
+              "Easy to register on e-commerce portals such as Swiggy and Zomato.",
+            color: "green",
+            icon: <ShoppingCart size={28} />,
+          },
+          {
+            title: "Brand Value",
+            description:
+              "Helps in building the brand value of the business by being FSSAI-compliant.",
+            color: "orange",
+            icon: <ShieldCheck size={28} />,
+          },
+          {
+            title: "Quality & Hygiene",
+            description:
+              "Ensures quality and hygiene of food by following FSSAI guidelines.",
+            color: "green",
+            icon: <ShieldCheck size={28} />,
+          },
+          {
+            title: "Consumer Health Safety",
+            description:
+              "Ensures the health of consumers by adhering to FSSAI standards.",
+            color: "orange",
+            icon: <Heart size={28} />,
+          },
+          {
+            title: "Builds Trust",
+            description:
+              "Being FSSAI compliant helps in winning consumers' confidence and trust.",
+            color: "green",
+            icon: <Handshake size={28} />,
+          },
+        ].map((feature, index) => (
+          <div key={index} className="relative">
 
-                            <div
-                              className={`absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-full shadow-lg ${
-                                feature.color === "green"
-                                  ? "bg-green-600 text-white"
-                                  : "bg-orange-600 text-white"
-                              }`}
-                            >
-                              {feature.icon}
-                            </div>
+            <div
+              className={`absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-full shadow-lg ${
+                feature.color === "green"
+                  ? "bg-green-600 text-white"
+                  : "bg-orange-600 text-white"
+              }`}
+            >
+              {feature.icon}
+            </div>
 
-                            <div className="bg-white rounded-2xl shadow-md pt-12 pb-8 px-6 text-center border border-gray-100 hover:shadow-xl transition">
+            <div className="bg-white rounded-2xl shadow-md pt-12 pb-8 px-6 text-center border border-gray-100 hover:shadow-xl transition">
 
-                              <h3
-                                className={`text-lg font-semibold ${
-                                  feature.color === "green"
-                                    ? "text-green-700"
-                                    : "text-orange-600"
-                                }`}
-                              >
-                                {feature.title}
-                              </h3>
+              <h3
+                className={`text-lg font-semibold ${
+                  feature.color === "green"
+                    ? "text-green-700"
+                    : "text-orange-600"
+                }`}
+              >
+                {feature.title}
+              </h3>
 
-                              <p className="text-gray-600 text-sm mt-4">
-                                {feature.description}
-                              </p>
+              <p className="text-gray-600 text-sm mt-4">
+                {feature.description}
+              </p>
 
-                              <div
-                                className={`w-10 h-1 mx-auto mt-6 rounded-full ${
-                                  feature.color === "green"
-                                    ? "bg-green-600"
-                                    : "bg-orange-600"
-                                }`}
-                              ></div>
+              <div
+                className={`w-10 h-1 mx-auto mt-6 rounded-full ${
+                  feature.color === "green"
+                    ? "bg-green-600"
+                    : "bg-orange-600"
+                }`}
+              ></div>
 
-                            </div>
-                          </div>
-                        ))}
+            </div>
+          </div>
+        ))}
 
-                      </div>
-                    </div>
-                  ),
-                },
+      </div>
+    </div>
+  ),
+},
+{
+  title: "Validity for FSSAI State License",
+  content: (
+    <div className="mt-6">
 
-                {
+      <div className="bg-green-50 border border-green-200 rounded-2xl p-8 shadow-md">
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">
+          Validity
+        </h3>
+
+        <p className="text-gray-700 leading-relaxed">
+          • Validity of the FSSAI State License is 
+          <span className="font-semibold text-green-700"> 1 year to 5 years</span>, 
+          depending on the choice of the Food Business Operators (FBOs) at the time of application, calculated from the date of issue of the license.
+        </p>
+
+      </div>
+
+    </div>
+  ),
+},
+
+               {
   title: "Documents Required For State License",
   content: (
     <div className="mt-10 flex flex-col items-center">
@@ -264,12 +402,13 @@ export default function FssaiStateLicense() {
       <div className="grid grid-cols-1 gap-4 w-full md:hidden px-4">
 
         {[
-          "Form-B duly completed",
-          "Blueprint/layout plan",
-          "Directors list",
-          "Machinery details",
-          "ID proof",
-          "Water analysis report",
+          "Form-B duly completed and signed (in duplicate) by the proprietor/partner or authorised signatory.",
+          "Blueprint/layout plan of the processing unit showing dimensions and operation-wise area allocation.",
+          "List of Directors with full address and contact details.",
+          "Name and list of equipment and machinery with number, installed capacity and horsepower used.",
+          "Photo ID and address proof issued by Government authority of Proprietor/Partner/Director(s)/Authorised Signatory.",
+          "List of food category to be manufactured (for manufacturers).",
+          "Authority letter with details of responsible person and alternative person for inspections and compliance.",
         ].map((doc, index) => {
 
           const colors = [
@@ -279,6 +418,7 @@ export default function FssaiStateLicense() {
             "bg-yellow-500",
             "bg-indigo-500",
             "bg-blue-500",
+            "bg-purple-500",
           ];
 
           return (
@@ -310,15 +450,17 @@ export default function FssaiStateLicense() {
         </div>
 
         {[
-          "Form-B duly completed",
-          "Blueprint/layout plan",
-          "Directors list",
-          "Machinery details",
-          "ID proof",
-          "Water analysis report",
+          "Form-B duly completed and signed by authorised signatory.",
+          "Blueprint/layout plan with dimensions and area allocation.",
+          "List of Directors with address and contact details.",
+          "List of equipment and machinery with capacity and horsepower.",
+          "Photo ID and address proof of authorised persons.",
+          "List of food category to be manufactured.",
+          "Authority letter of responsible person for compliance.",
+          "Additional documents may be required based on the specific food business and local regulations.",
         ].map((doc, index) => {
 
-          const angle = (360 / 6) * index;
+          const angle = (360 / 8) * index;
 
           const colors = [
             "bg-red-500",
@@ -327,6 +469,8 @@ export default function FssaiStateLicense() {
             "bg-yellow-500",
             "bg-indigo-500",
             "bg-blue-500",
+            "bg-purple-500",
+            "bg-pink-500",
           ];
 
           return (
@@ -418,6 +562,95 @@ export default function FssaiStateLicense() {
             </p>
           </div>
         ))}
+
+      </div>
+
+    </div>
+  ),
+},
+{
+  title: "Food Safety Inspection (Audit)",
+  content: (
+    <div className="mt-6">
+
+      <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-8 shadow-md">
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-4">
+          Food Safety Audit
+        </h3>
+
+        <ul className="space-y-3 text-gray-700 leading-relaxed list-disc pl-5">
+
+          <li>
+            Periodical food safety audit and inspection shall be conducted by the licensing authority of the licensed establishment.
+          </li>
+
+          <li>
+            Food safety audits can be carried out at any time in the licensed establishment.
+          </li>
+
+          <li>
+            These audits can be conducted either by FSSAI directly or through accredited agencies.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  ),
+},
+{
+  title: "Returns for FSSAI State License",
+  content: (
+    <div className="mt-6">
+
+      <div className="bg-green-50 border border-green-200 rounded-2xl p-8 shadow-md">
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-4">
+          Return
+        </h3>
+
+        <div className="space-y-4 text-gray-700 leading-relaxed">
+
+          {/* Annual Return */}
+          <div>
+            <p className="font-semibold text-green-700 mb-2">
+              Annual Return (Form-D1)
+            </p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Every licensed establishment shall submit a return electronically in Form-D1.</li>
+              <li>It must be filed with the licensing authority on or before 31 May every year.</li>
+              <li>A separate return shall be filed for each class of license.</li>
+            </ul>
+          </div>
+
+          {/* Milk Return */}
+          <div>
+            <p className="font-semibold text-green-700 mb-2">
+              Half-Yearly Return for Milk & Milk Products (Form-D2)
+            </p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Applicable to establishments engaged in manufacturing milk and/or milk products.</li>
+              <li>For period 1 April to 30 September – file on or before 31 October.</li>
+              <li>For period 1 October to 31 March – file on or before 30 April.</li>
+            </ul>
+          </div>
+
+          {/* Penalty */}
+          <div>
+            <p className="font-semibold text-red-600 mb-2">
+              Penalty for Delayed Filing
+            </p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>
+                Delay beyond 31 May (annual return), 31 October, or 30 April (milk returns) attracts a penalty of 
+                <span className="font-semibold text-red-600"> ₹100 per day</span>.
+              </li>
+            </ul>
+          </div>
+
+        </div>
 
       </div>
 
@@ -525,12 +758,12 @@ export default function FssaiStateLicense() {
 
       {/* Contact Link */}
       <div className="text-center mt-12">
-        <a
+        <Link
           href="/contact-us"
           className="inline-block bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
         >
           Contact Us
-        </a>
+        </Link>
 
         <p className="text-gray-700 mt-4">
           Contact us now and know more about the fee structure!
@@ -550,7 +783,7 @@ export default function FssaiStateLicense() {
         {[
           {
             title: "Operating Without License",
-            desc: "Operating a food business without an FSSAI licence can attract a penalty of up to ₹5 lakhs and imprisonment of up to 6 months.",
+            desc: "•	Running a food business without a license is punishable under Section 63 of the FSS Act, 2006 and shall be punishable with imprisonment for a term of a maximum of six months and also with a fine for a maximum of ₹5 Lakhs.",
           },
           {
             title: "False Information",
@@ -558,7 +791,7 @@ export default function FssaiStateLicense() {
           },
           {
             title: "Non-Compliance",
-            desc: "Failure to comply with food safety and hygiene standards may result in penalties ranging from ₹1 lakh to ₹10 lakhs.",
+            desc: "Failure to comply with food safety and hygiene standards may result in penalties ranging from ₹1 lakh to ₹10 lakhs or even shutdown of the business premises.",
           },
           {
             title: "Repeated Violations",
@@ -613,10 +846,10 @@ export default function FssaiStateLicense() {
 
       {/* Intro */}
       <p className="text-gray-700 leading-relaxed">
-        FSSAI registration is not a one-time process. Every Food Business
-        Operator (FBO) must renew the registration before its expiry to
+        FSSAI State License renewal is not a one-time process. Every Food Business
+        Operator (FBO) must renew the license before its expiry to
         continue operating legally. Timely renewal helps avoid penalties
-        and ensures uninterrupted business operations.
+        and ensures uninterrupted business operations.Food Business Operators (FBOs) can renew their FSSAI State License online by filing and submitting FORM-A on the FoSCoS portal.
       </p>
 
       {/* Renewal Timeline */}
@@ -628,9 +861,9 @@ export default function FssaiStateLicense() {
         <div className="grid md:grid-cols-3 gap-6">
 
           {[
-            "Submit your renewal application at least 60 days before your registration expires.",
-            "If you apply within 30 days after expiry, you will need to pay a penalty.",
-            "If more than 30 days pass after expiry, a fresh FSSAI application must be submitted.",
+            "The window opens for renewal of the FSSAI Registration 180 days before expiry. But you can also file a renewal up to 30 days before the expiry of the Food Registration",
+            "The renewal of an FSSAI Registration in India is essential to ensure the uninterrupted legal operation of a food business in India",
+            "The process is carried out online through the FoSCoS (Food Safety Compliance System) portal of FSSAI and should ideally be initiated at least 30 days before the expiry date of the existing registration.",
           ].map((item, index) => (
             <div
               key={index}
@@ -648,39 +881,47 @@ export default function FssaiStateLicense() {
 
       {/* Renewal Process */}
       <div>
-        <h3 className="text-xl font-semibold text-orange-600 mt-4 mb-6">
-          Renewal Process: How to Renew?
-        </h3>
+  <h3 className="text-xl font-semibold text-orange-600 mt-4 mb-6">
+    Renewal Process: How to Renew?
+  </h3>
 
-        <div className="space-y-4">
+  <div className="space-y-4">
 
-          {[
-            "Log in to the FoSCoS portal using your credentials.",
-            "Go to the renewal section.",
-            "Verify and update your business details.",
-            "Upload any newly required documents.",
-            "Pay the applicable renewal fee.",
-            "Submit the application for processing.",
-          ].map((step, index) => (
-            <div
-              key={index}
-              className="bg-orange-50 border border-orange-200 rounded-2xl p-5 shadow-md"
-            >
-              <div className="flex items-center gap-4">
+    {[
+      "Log in to the FoSCoS portal using your credentials.",
+      "Go to the renewal section.",
+      "Go to Dashboard > Renewal",
+      "Select Validity Period (1 to 5 Years)",
+      "Upload Required Documents",
+      "Make Payment Online",
+      "Submit Application & Note Reference Number",
+      "Inspection (If Applicable), FSSAI may conduct a site inspection before approval.",
+      "Download Renewed Food License Certificate."
+    ].map((step, index) => (
+      <div
+        key={index}
+        className="bg-orange-50 border border-orange-200 rounded-2xl p-5 shadow-md"
+      >
+        <div className="flex items-center gap-4">
 
-                <div className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-600 text-white font-semibold">
-                  {index + 1}
-                </div>
+          <div className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-600 text-white font-semibold">
+            {index + 1}
+          </div>
 
-                <p className="text-gray-700">{step}</p>
-
-              </div>
-            </div>
-          ))}
+          <p className="text-gray-700">{step}</p>
 
         </div>
       </div>
+    ))}
 
+  </div>
+
+  {/* NOTE */}
+  <p className="mt-6 text-sm text-gray-600 italic">
+    <span className="text-blue-600 font-semibold">Note:</span> A late fee of ₹100 per day will be charged by the authority for a late application for renewal beyond 30 days prior to expiration.
+  </p>
+
+</div>
       {/* Documents for Renewal */}
       <div>
         <h3 className="text-xl font-semibold text-green-700 mt-4 mb-6">
@@ -690,7 +931,7 @@ export default function FssaiStateLicense() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {[
-            "Previous FSSAI registration certificate",
+            "Previous FSSAI State License certificate",
             "Self-declaration confirming continued compliance",
             "Annual returns from the previous year",
             "Updated business information",
@@ -721,7 +962,7 @@ export default function FssaiStateLicense() {
         <div className="grid md:grid-cols-3 gap-6">
 
           {[
-            "Update the display of your renewed FSSAI registration certificate at the business premises.",
+            "Update the display of your renewed FSSAI License certificate at the business premises.",
             "Communicate the renewed license number to business partners.",
             "Update packaging and labelling with the new validity dates.",
           ].map((item, index) => (

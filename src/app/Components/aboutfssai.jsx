@@ -11,7 +11,7 @@ export default function AboutFssaiHero() {
       />
 
       {/* Right Content Section */}
-      <div className="w-1/2 flex items-center justify-center px-10 bg-white">
+      <div className="w-1/2 flex items-center justify-center px-10 pt-10  bg-white">
         <div className="max-w-xl">
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-800">

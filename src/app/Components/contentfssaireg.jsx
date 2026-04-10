@@ -1,6 +1,6 @@
 import { Handshake, ShoppingCart, ShieldCheck, TrendingUp } from "lucide-react";
 import { Users, BarChart3, Globe, Banknote, AlertTriangle } from "lucide-react";
-import { FaCheckCircle, FaUtensils, FaStore, FaCalendarAlt } from "react-icons/fa";
+import { FaCheckCircle, FaUtensils, FaStore, FaCalendarAlt, FaIndustry } from "react-icons/fa";
 import Contact from "./subpageconsultation";
 import Link from "next/link";
 
@@ -35,74 +35,87 @@ export default function FssaiRegistration() {
 {
   title: "Eligibility for FSSAI Registration",
   content: (
-    <div className="grid md:grid-cols-4 gap-6 mt-6">
+    <div className="grid md:grid-cols-3 gap-6 mt-6">
 
       {/* Card 1 */}
       <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
-        
         <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-green-200 mb-4">
           <FaCheckCircle className="text-green-600 text-2xl" />
         </div>
-
         <h3 className="font-semibold text-lg mb-2 text-gray-800">
           Small Food Businesses
         </h3>
-
         <p className="text-gray-600 text-sm">
-          Food businesses with annual turnover up to ₹12 lakhs.
+           Any Food Business Operators (FBOs) whose annual turnover is up to ₹12 Lakhs.
         </p>
-
       </div>
 
       {/* Card 2 */}
       <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
-        
         <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-purple-200 mb-4">
           <FaUtensils className="text-purple-600 text-2xl" />
         </div>
-
         <h3 className="font-semibold text-lg mb-2 text-gray-800">
           Food Manufacturers
         </h3>
-
         <p className="text-gray-600 text-sm">
-          Any person manufacturing or selling food articles.
+          Any person who manufactures or sells any article of food himself.
         </p>
-
       </div>
 
       {/* Card 3 */}
       <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
-        
         <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-yellow-200 mb-4">
           <FaStore className="text-yellow-600 text-2xl" />
         </div>
-
         <h3 className="font-semibold text-lg mb-2 text-gray-800">
-          Retailers & Vendors
+          Retailers
         </h3>
-
         <p className="text-gray-600 text-sm">
-          Petty retailers, hawkers, vendors, or temporary stall holders.
+           Any petty retailer dealing in food products.
         </p>
-
       </div>
 
       {/* Card 4 */}
+      <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-orange-200 mb-4">
+          <FaStore className="text-orange-600 text-2xl" />
+        </div>
+        <h3 className="font-semibold text-lg mb-2 text-gray-800">
+          Vendors & Stall Holders
+        </h3>
+        <p className="text-gray-600 text-sm">
+           Any hawker, itinerant vendor or temporary stall holder who deals in food products.
+        </p>
+      </div>
+
+      {/* Card 5 */}
       <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
-        
         <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-pink-200 mb-4">
           <FaCalendarAlt className="text-pink-600 text-2xl" />
         </div>
-
         <h3 className="font-semibold text-lg mb-2 text-gray-800">
           Event Food Distribution
         </h3>
-
         <p className="text-gray-600 text-sm">
-          Individuals distributing food at social gatherings or events.
+           Any individual who distributes food at any religious or social gathering, except a caterer.
         </p>
+      </div>
 
+      {/* Card 6 */}
+      <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
+        <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-indigo-200 mb-4">
+          <FaIndustry className="text-indigo-600 text-2xl" />
+        </div>
+        <h3 className="font-semibold text-lg mb-2 text-gray-800">
+          Small Scale Food Capacity
+        </h3>
+        <p className="text-gray-600 text-sm">
+          Any food business, small-scale or cottage industries relating to food business, whose capacity is: <br />
+          i. Production ≤ 100 kg/ltr per day. <br />
+          ii. Milk handling up to 500 litres/day. <br />
+          iii. Slaughtering ≤ 2 large animals / 10 small animals / 50 poultry birds per day.
+        </p>
       </div>
 
     </div>
@@ -112,41 +125,112 @@ export default function FssaiRegistration() {
                {
   title: "Procedures for Obtaining FSSAI Registration",
   content: (
-    <div className="relative max-w-5xl mx-auto py-14">
+    <div className="max-w-5xl mx-auto pt-10 md:pt-14 pb-20 md:pb-28 relative">
 
-      {/* Left Heading */}
-      <div className="absolute left-0 top-1/3 text-gray-700 font-semibold text-lg hidden md:block">
+      {/* LEFT HEADING (Desktop Only) */}
+      <div className="hidden md:block absolute left-0 top-1/3 text-gray-700 font-semibold text-lg">
         Certification <br /> Process
       </div>
 
-      {/* Curved Path */}
-      <svg
-        className="absolute left-20 top-0 h-full"
-        width="160"
-        height="600"
-        viewBox="0 0 160 600"
-        fill="none"
-      >
-        <path
-          d="M80 0 C10 80,150 120,80 200 S10 320,80 400 S150 520,80 600"
-          stroke="#9CA3AF"
-          strokeWidth="3"
-          strokeDasharray="8 8"
-          fill="transparent"
-        />
-      </svg>
+      {/* ================= DESKTOP VIEW ================= */}
+      <div className="hidden md:block relative">
 
-      {/* Steps */}
-      <div className="ml-44 space-y-12">
+        {/* SVG PATH */}
+        <svg
+          className="absolute left-20 top-0 h-full"
+          width="160"
+          height="600"
+          viewBox="0 0 160 600"
+          fill="none"
+        >
+          <path
+            d="M80 20 
+               C20 80,140 120,80 180 
+               S20 280,80 340 
+               S140 440,80 520"
+            stroke="#9CA3AF"
+            strokeWidth="3"
+            strokeDasharray="8 8"
+            fill="transparent"
+          />
+        </svg>
+
+        {/* STEPS */}
+        <div className="ml-44 space-y-14 mb-10">
+
+          {[
+            "a. Food Business Operators (FBOs) can get FSSAI Registration online by filing and submitting FORM-A on the FoSCoS portal.",
+            "b. The FSSAI Registration form must be accompanied by the required documents and submitted online on the portal at the time of filing (Physical submission required only if authority asks).",
+            "c. The FSSAI Registration application can be accepted or rejected by the department within 7 working days from the date of application. If rejected, it has to be intimated to the applicant in writing.",
+            "d. Department will scrutinise the documents submitted.",
+            "e. The Department may conduct a physical inspection of the food premises if necessary, before granting the FSSAI Registration Certificate.",
+            "f. If the Department is satisfied that the Food Business Operator (FBO) has complied with all criteria, then it will grant the FSSAI Registration Certificate, and the Food Business Operator can download that certificate from the portal.",
+            "g. Food Business Operators (FBOs) must display that certificate at the place of business.",
+          ].map((step, index) => {
+
+            const colors = [
+              "bg-red-500",
+              "bg-orange-500",
+              "bg-green-500",
+              "bg-yellow-500",
+              "bg-indigo-500",
+              "bg-blue-500",
+              "bg-purple-500",
+            ];
+
+            const bgColors = [
+              "bg-red-100",
+              "bg-orange-100",
+              "bg-green-100",
+              "bg-yellow-100",
+              "bg-indigo-100",
+              "bg-blue-100",
+              "bg-purple-100",
+            ];
+
+            return (
+              <div
+  key={index}
+  className={`flex items-center ${
+    index % 2 === 0 ? "justify-start" : "justify-end"
+  }`}
+>
+  <div className="flex items-start gap-4 max-w-lg">
+
+    {/* CIRCLE */}
+    <div
+      className={`w-10 h-10 flex items-center justify-center rounded-full text-white font-bold shadow shrink-0 ${colors[index]}`}
+    >
+      {index + 1}
+    </div>
+
+    {/* TEXT */}
+    <div
+      className={`px-6 py-4 rounded-xl shadow-md ${bgColors[index]} w-full`}
+    >
+      <p className="text-gray-800 font-medium text-base leading-relaxed">
+        {step}
+      </p>
+    </div>
+
+  </div>
+</div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* ================= MOBILE VIEW ================= */}
+      <div className="block md:hidden space-y-6">
 
         {[
-          "Apply through FoSCoS Portal",
-          "Upload required documents",
-          "Application review within 7 working days",
-          "Department scrutiny",
-          "Inspection (if required)",
-          "Download certificate after approval",
-          "Display certificate at business place",
+          "a. Food Business Operators (FBOs) can get FSSAI Registration online by filing and submitting FORM-A on the FoSCoS portal.",
+          "b. The FSSAI Registration form must be accompanied by the required documents and submitted online on the portal at the time of filing (Physical submission required only if authority asks).",
+          "c. The FSSAI Registration application can be accepted or rejected by the department within 7 working days from the date of application.",
+          "d. Department will scrutinise the documents submitted.",
+          "e. The Department may conduct a physical inspection of the food premises if necessary.",
+          "f. If satisfied, the department grants the FSSAI Registration Certificate which can be downloaded from the portal.",
+          "g. Food Business Operators (FBOs) must display that certificate at the place of business.",
         ].map((step, index) => {
 
           const colors = [
@@ -170,280 +254,320 @@ export default function FssaiRegistration() {
           ];
 
           return (
-            <div key={index} className="flex items-center gap-6">
+            <div key={index} className="flex items-start gap-4">
 
-              {/* Step Circle */}
+              {/* CIRCLE */}
               <div
-                className={`w-10 h-10 flex items-center justify-center rounded-full text-white font-bold ${colors[index]} shadow`}
+                className={`w-9 h-9 flex items-center justify-center rounded-full text-white font-bold shadow shrink-0 ${colors[index]}`}
               >
                 {index + 1}
               </div>
 
-              {/* Step Bubble */}
+              {/* TEXT */}
               <div
-                className={`px-6 py-4 rounded-full shadow-md ${bgColors[index]} hover:shadow-lg transition`}
+                className={`px-4 py-3 rounded-xl shadow-md ${bgColors[index]} w-full`}
               >
-                <p className="text-gray-800 font-medium">{step}</p>
+                <p className="text-gray-800 font-medium text-sm leading-relaxed">
+                  {step}
+                </p>
               </div>
 
             </div>
           );
         })}
       </div>
+
     </div>
   ),
 },
                 {
-                  title: "Advantages & Benefits of FSSAI Registration",
-                  content: (
-                    <div className="mt-12">
+  title: "Advantages & Benefits of FSSAI Registration",
+  content: (
+    <div className="mt-12">
 
-                      <p className="text-gray-700 mb-10">
-                        Having an FSSAI license provides multiple advantages and
-                        benefits to food businesses. It not only ensures compliance
-                        with government regulations but also helps build customer
-                        trust and business growth opportunities.
-                      </p>
+      <p className="text-gray-700 mb-10">
+        Having an FSSAI license provides multiple advantages and
+        benefits to food businesses. It not only ensures compliance
+        with government regulations but also helps build customer
+        trust and business growth opportunities.
+      </p>
 
-                      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                        {[
-                          {
-                            title: "Customer Trust",
-                            description:
-                              "Having an FSSAI license builds consumer confidence that your food products are safe and hygienic.",
-                            color: "green",
-                            icon: <Users size={28} />,
-                          },
-                          {
-                            title: "Business Growth",
-                            description:
-                              "When customers trust your food quality, it leads to higher sales and faster business growth.",
-                            color: "orange",
-                            icon: <BarChart3 size={28} />,
-                          },
-                          {
-                            title: "Online Business Expansion",
-                            description:
-                              "Marketplaces like Amazon, Flipkart, Zomato, and Swiggy require FSSAI registration to sell food products.",
-                            color: "green",
-                            icon: <Globe size={28} />,
-                          },
-                          {
-                            title: "Investor Confidence",
-                            description:
-                              "FSSAI certification assures banks and investors that your business follows legal food safety regulations.",
-                            color: "orange",
-                            icon: <Banknote size={28} />,
-                          },
-                          {
-                            title: "Quality Compliance",
-                            description:
-                              "Ensures your food business follows hygiene and safety standards set by regulatory authorities.",
-                            color: "green",
-                            icon: <ShieldCheck size={28} />,
-                          },
-                          {
-                            title: "Enhances Brand Reputation",
-                            description:
-                              "Improves the goodwill and credibility of your food brand in the market.",
-                            color: "orange",
-                            icon: <Handshake size={28} />,
-                          },
-                          {
-                            title: "Online Listing Eligibility",
-                            description:
-                              "Essential for listing your food products on major online food and ecommerce platforms.",
-                            color: "green",
-                            icon: <ShoppingCart size={28} />,
-                          },
-                          {
-                            title: "Business Credibility",
-                            description:
-                              "Builds customer confidence and ensures compliance with food safety regulations.",
-                            color: "orange",
-                            icon: <TrendingUp size={28} />,
-                          },
-                          {
-                            title: "Avoid Penalties",
-                            description:
-                              "Running a food business without FSSAI registration may lead to heavy penalties or shutdown.",
-                            color: "green",
-                            icon: <AlertTriangle size={28} />,
-                          },
-                        ].map((feature, index) => (
-                          <div key={index} className="relative">
-
-                            <div
-                              className={`absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-full shadow-lg ${
-                                feature.color === "green"
-                                  ? "bg-green-600 text-white"
-                                  : "bg-orange-600 text-white"
-                              }`}
-                            >
-                              {feature.icon}
-                            </div>
-
-                            <div className="bg-white rounded-2xl shadow-md pt-12 pb-8 px-6 text-center border border-gray-100 hover:shadow-xl transition">
-
-                              <h3
-                                className={`text-lg font-semibold ${
-                                  feature.color === "green"
-                                    ? "text-green-700"
-                                    : "text-orange-600"
-                                }`}
-                              >
-                                {feature.title}
-                              </h3>
-
-                              <p className="text-gray-600 text-sm mt-4">
-                                {feature.description}
-                              </p>
-
-                              <div
-                                className={`w-10 h-1 mx-auto mt-6 rounded-full ${
-                                  feature.color === "green"
-                                    ? "bg-green-600"
-                                    : "bg-orange-600"
-                                }`}
-                              ></div>
-
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ),
-                },
-                {
-               title: "Documents Required for FSSAI Registration",
-content: (
-  <div className="mt-10 flex flex-col items-center">
-
-    <p className="text-gray-700 mb-12 text-center max-w-3xl px-4">
-      The following documents may be required while applying for FSSAI
-      Registration or License depending on the nature and scale of the
-      food business.
-    </p>
-
-    {/* MOBILE VIEW */}
-    <div className="grid grid-cols-1 gap-4 w-full md:hidden px-4">
-
-      {[
-        "Passport-sized photograph of the applicant",
-        "KYC documents of the applicant (Email ID, Mobile No., PAN, Aadhaar, Voter ID, Bank Statement, etc.)",
-        "Business address proof (Rent agreement, Electricity bill)",
-        "Form B – duly completed and signed",
-        "Food Safety Management Plan (required for manufacturers)",
-        "List of food products or items to be dealt with",
-        "Proof of business registration (Company / LLP / Shop & Establishment)",
-        "Import Export Code (for importers and exporters)",
-        "Layout plan of the processing unit (for manufacturers and processors)",
-        "NOC from Municipality or Local Authority (if applicable)",
-      ].map((doc, index) => {
-
-        const colors = [
-          "bg-red-500",
-          "bg-orange-500",
-          "bg-green-500",
-          "bg-yellow-500",
-          "bg-indigo-500",
-          "bg-blue-500",
-          "bg-purple-500",
-          "bg-pink-500",
-          "bg-emerald-500",
-          "bg-amber-500"
-        ];
-
-        return (
-          <div
-            key={index}
-            className={`${colors[index]} text-white p-4 rounded-xl shadow flex items-start gap-3`}
-          >
-            <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-700 font-bold text-sm">
-              {index + 1}
-            </div>
-
-            <p className="text-sm leading-snug">
-              {doc}
-            </p>
-          </div>
-        );
-      })}
-
-    </div>
-
-    {/* DESKTOP CIRCLE INFOGRAPHIC */}
-    <div className="relative hidden md:flex w-[780px] h-[780px] items-center justify-center">
-
-      {/* Center Circle */}
-      <div className="absolute w-36 h-36 rounded-full bg-white shadow-xl border-4 border-orange-500 flex items-center justify-center text-center z-10">
-        <span className="text-orange-600 font-semibold text-sm leading-tight">
-          FSSAI <br /> Documents
-        </span>
-      </div>
-
-      {[
-        "Passport-sized photograph of the applicant",
-        "KYC documents of the applicant (Email ID, Mobile No., PAN, Aadhaar, Voter ID, Bank Statement, etc.)",
-        "Business address proof (Rent agreement, Electricity bill)",
-        "Form B – duly completed and signed",
-        "Food Safety Management Plan (required for manufacturers)",
-        "List of food products or items to be dealt with",
-        "Proof of business registration (Company / LLP / Shop & Establishment)",
-        "Import Export Code (for importers and exporters)",
-        "Layout plan of the processing unit (for manufacturers and processors)",
-        "NOC from Municipality or Local Authority (if applicable)",
-      ].map((doc, index) => {
-
-        const angle = (360 / 10) * index;
-
-        const colors = [
-          "bg-red-500",
-          "bg-orange-500",
-          "bg-green-500",
-          "bg-yellow-500",
-          "bg-indigo-500",
-          "bg-blue-500",
-          "bg-purple-500",
-          "bg-pink-500",
-          "bg-emerald-500",
-          "bg-amber-500"
-        ];
-
-        return (
-          <div
-            key={index}
-            className="absolute flex flex-col items-center text-center"
-            style={{
-              transform: `rotate(${angle}deg) translate(300px) rotate(-${angle}deg)`
-            }}
-          >
+        {[
+          {
+            title: "Enhances Goodwill",
+            description:
+              "Helps in enhancing the goodwill of the food business.",
+            color: "green",
+            icon: <Users size={28} />,
+          },
+          {
+            title: "E-commerce Recognition",
+            description:
+              "Recognised by e-commerce portals such as Swiggy and Zomato for listing and delivery.",
+            color: "orange",
+            icon: <Globe size={28} />,
+          },
+          {
+            title: "Profit Growth",
+            description:
+              "May assist in profit building and overall business expansion.",
+            color: "green",
+            icon: <BarChart3 size={28} />,
+          },
+          {
+            title: "Customer Health Safety",
+            description:
+              "Ensures the health of customers by adhering to FSSAI guidelines.",
+            color: "orange",
+            icon: <ShieldCheck size={28} />,
+          },
+          {
+            title: "Quality & Hygiene",
+            description:
+              "Ensures quality and hygiene of food by complying with FSSAI regulations.",
+            color: "green",
+            icon: <ShieldCheck size={28} />,
+          },
+          {
+            title: "Regulatory Compliance",
+            description:
+              "Demonstrates compliance with food safety laws and regulations.",
+            color: "orange",
+            icon: <Banknote size={28} />,
+          },
+          {
+            title: "Lawful Business Operations",
+            description:
+              "Facilitates lawful operation of food business without legal risks.",
+            color: "green",
+            icon: <Handshake size={28} />,
+          },
+          {
+            title: "Online Platform Eligibility",
+            description:
+              "Required for listing on certain e-commerce and food delivery platforms.",
+            color: "orange",
+            icon: <ShoppingCart size={28} />,
+          },
+          {
+            title: "Business Credibility",
+            description:
+              "Enhances business credibility and builds customer confidence.",
+            color: "green",
+            icon: <TrendingUp size={28} />,
+          },
+        ].map((feature, index) => (
+          <div key={index} className="relative">
 
             <div
-              className={`w-44 h-28 ${colors[index]} text-white shadow-xl flex flex-col justify-center items-center p-3`}
-              style={{
-                borderRadius: "70% 70% 60% 60% / 80% 80% 40% 40%"
-              }}
+              className={`absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 flex items-center justify-center rounded-full shadow-lg ${
+                feature.color === "green"
+                  ? "bg-green-600 text-white"
+                  : "bg-orange-600 text-white"
+              }`}
             >
+              {feature.icon}
+            </div>
 
-              <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-700 font-bold text-sm mb-2">
+            <div className="bg-white rounded-2xl shadow-md pt-12 pb-8 px-6 text-center border border-gray-100 hover:shadow-xl transition">
+
+              <h3
+                className={`text-lg font-semibold ${
+                  feature.color === "green"
+                    ? "text-green-700"
+                    : "text-orange-600"
+                }`}
+              >
+                {feature.title}
+              </h3>
+
+              <p className="text-gray-600 text-sm mt-4">
+                {feature.description}
+              </p>
+
+              <div
+                className={`w-10 h-1 mx-auto mt-6 rounded-full ${
+                  feature.color === "green"
+                    ? "bg-green-600"
+                    : "bg-orange-600"
+                }`}
+              ></div>
+
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  ),
+},
+
+                {
+  title: "Validity for FSSAI Registration",
+  content: (
+    <div className="mt-6">
+
+      <div className="bg-green-50 border border-green-200 rounded-2xl p-8 shadow-md">
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-3">
+          Validity
+        </h3>
+
+        <p className="text-gray-700 leading-relaxed">
+          Validity of FSSAI registration is 
+          <span className="font-semibold text-green-700"> 1 year to 5 years</span>, 
+          depending on the period chosen by the Food Business Operators (FBOs) at the time of application, from the date of issuance of registration.
+        </p>
+
+      </div>
+
+    </div>
+  ),
+},
+                {
+  title: "Documents Required for FSSAI Registration",
+  content: (
+    <div className="mt-10 flex flex-col items-center">
+
+      <p className="text-gray-700 mb-12 text-center max-w-3xl px-4">
+        The following documents may be required while applying for FSSAI
+        Registration or License depending on the nature and scale of the
+        food business.
+      </p>
+
+      {/* MOBILE VIEW */}
+      <div className="grid grid-cols-1 gap-4 w-full md:hidden px-4">
+
+        {[
+          "Name of the Applicant/Company",
+          "Photograph of the applicant",
+          "Designation, Individual/Partner/Proprietor/Secretary of dairy co-operative society or Others (Please specify)",
+          "Proof of Identity of applicant (Driving License, Passport, Ration Card or Election ID card)",
+          "Correspondence address with Tel No, Mobile No., Fax No., Email ID",
+          "Area or Location where the food business is to be conducted / Address of the premises",
+          "Description of the food items proposed to be manufactured or sold",
+        ].map((doc, index) => {
+
+          const colors = [
+            "bg-red-500",
+            "bg-orange-500",
+            "bg-green-500",
+            "bg-yellow-500",
+            "bg-indigo-500",
+            "bg-blue-500",
+            "bg-purple-500",
+          ];
+
+          return (
+            <div
+              key={index}
+              className={`${colors[index]} text-white p-4 rounded-xl shadow flex items-start gap-3`}
+            >
+              <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-700 font-bold text-sm">
                 {index + 1}
               </div>
 
-              <p className="text-xs font-medium leading-snug px-2">
+              <p className="text-sm leading-snug">
                 {doc}
               </p>
+            </div>
+          );
+        })}
+
+      </div>
+
+      {/* DESKTOP CIRCLE INFOGRAPHIC */}
+      <div className="relative hidden md:flex w-[780px] h-[780px] items-center justify-center">
+
+        {/* Center Circle */}
+        <div className="absolute w-36 h-36 rounded-full bg-white shadow-xl border-4 border-orange-500 flex items-center justify-center text-center z-10">
+          <span className="text-orange-600 font-semibold text-sm leading-tight">
+            FSSAI <br /> Documents
+          </span>
+        </div>
+
+        {[
+          "Name of the Applicant/Company",
+          "Photograph of the applicant",
+          "Designation (Individual/Partner/Proprietor)",
+          "Proof of Identity (Driving License, Passport, Ration Card or Election ID)",
+          "Correspondence address with contact details",
+          "Business location / Address of premises",
+          "Description of food items to be manufactured or sold",
+        ].map((doc, index) => {
+
+          const total = 7;
+          const angle = (360 / total) * index;
+
+          const colors = [
+            "bg-red-500",
+            "bg-orange-500",
+            "bg-green-500",
+            "bg-yellow-500",
+            "bg-indigo-500",
+            "bg-blue-500",
+            "bg-purple-500",
+          ];
+
+          return (
+            <div
+              key={index}
+              className="absolute flex flex-col items-center text-center"
+              style={{
+                transform: `rotate(${angle}deg) translate(300px) rotate(-${angle}deg)`
+              }}
+            >
+
+              <div
+                className={`w-44 h-60 ${colors[index]} text-white shadow-xl flex flex-col justify-center items-center p-3`}
+                style={{
+                  borderRadius: "70% 70% 60% 60% / 80% 80% 40% 40%"
+                }}
+              >
+
+                <div className="w-8 h-8 flex items-center justify-center rounded-full bg-white text-gray-700 font-bold text-sm mb-2">
+                  {index + 1}
+                </div>
+
+                <p className="text-xs font-medium leading-snug px-2">
+                  {doc}
+                </p>
+
+              </div>
 
             </div>
+          );
+        })}
+      </div>
 
-          </div>
-        );
-      })}
     </div>
+  ),
+},
+{
+  title: "Registration Number & Display Requirements",
+  content: (
+    <div className="mt-6">
 
-  </div>
-),
+      <div className="relative bg-gray-50 border-blue-300 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition duration-300">
+
+        {/* Glow Effect */}
+        <div className="absolute inset-0 rounded-2xl ring-2 ring-blue-200 pointer-events-none"></div>
+
+        <p className="text-orange-400 leading-relaxed relative z-10">
+          Post registration, you will get a{" "}
+          
+          <span className="inline-block px-3 py-1 text-sm font-semibold text-blue-700 bg-white border border-blue-400 rounded-full mx-1 shadow-sm">
+            14-digit registration number
+          </span>
+          
+          , which Food Business Operators (FBOs) must display at the place of business and also mention that number on the packaging of the product.
+        </p>
+
+      </div>
+
+    </div>
+  ),
 },
                 {
   title: "The Importance Of FSSAI Registration",
@@ -506,6 +630,37 @@ content: (
     </div>
   ),
 },
+{
+  title: "Food Safety Inspection (Audit)",
+  content: (
+    <div className="mt-6">
+
+      <div className="bg-indigo-50 border border-indigo-200 rounded-2xl p-8 shadow-md">
+
+        <h3 className="text-lg font-semibold text-gray-800 mb-4">
+          Food Safety Inspection (Audit)
+        </h3>
+
+        <ul className="space-y-3 text-gray-700 leading-relaxed list-disc pl-5">
+
+          <li>
+            The Registering Authority or any officer authorized by the registering authority shall carry out food safety inspection of the registered establishments at least once in a year.
+          </li>
+
+          <li>
+            These audits can be conducted either by FSSAI directly or through accredited agencies.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  ),
+},
+
+
+
 {
   title: "FSSAI Registration Fee Structure",
   content: (
@@ -583,12 +738,12 @@ content: (
 
       {/* Contact Link */}
       <div className="text-center mt-12">
-        <a
+        <Link
           href="/contact-us"
           className="inline-block bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
         >
           Contact Us
-        </a>
+        </Link>
 
         <p className="text-gray-700 mt-4">
           Contact us now and know more about the fee structure!
@@ -608,7 +763,7 @@ content: (
         {[
           {
             title: "Operating Without License",
-            desc: "Operating a food business without an FSSAI licence can attract a penalty of up to ₹5 lakhs and imprisonment of up to 6 months.",
+            desc: "There is a penalty of ₹25000 for running a food business without FSSAI Registration.	There is no penalty specified in the FSS Act, 2006, for running a food business by petty business-like Hawkers, Vendors, Cloud Kitchen, etc., but authorized officers may charge a penalty of a maximum of ₹25000 as specified in section 50 of the FSS Act, 2006. ",
           },
           {
             title: "False Information",
@@ -616,7 +771,7 @@ content: (
           },
           {
             title: "Non-Compliance",
-            desc: "Failure to comply with food safety and hygiene standards may result in penalties ranging from ₹1 lakh to ₹10 lakhs.",
+            desc: "Failure to comply with food safety and hygiene standards may result in penalties ranging from ₹1 lakh to ₹10 lakhs or even shutdown of the business premises.",
           },
           {
             title: "Repeated Violations",
@@ -674,7 +829,7 @@ content: (
         FSSAI registration is not a one-time process. Every Food Business
         Operator (FBO) must renew the registration before its expiry to
         continue operating legally. Timely renewal helps avoid penalties
-        and ensures uninterrupted business operations.
+        and ensures uninterrupted business operations.Food Business Operators (FBOs) can renew their FSSAI Registration online by filing and submitting FORM-A on the FoSCoS portal.
       </p>
 
       {/* Renewal Timeline */}
@@ -686,9 +841,9 @@ content: (
         <div className="grid md:grid-cols-3 gap-6">
 
           {[
-            "Submit your renewal application at least 60 days before your registration expires.",
-            "If you apply within 30 days after expiry, you will need to pay a penalty.",
-            "If more than 30 days pass after expiry, a fresh FSSAI application must be submitted.",
+            "The window opens for renewal of the FSSAI Registration 180 days before expiry. But you can also file a renewal up to 30 days before the expiry of the Food Registration",
+            "The renewal of an FSSAI Registration in India is essential to ensure the uninterrupted legal operation of a food business in India",
+            "The process is carried out online through the FoSCoS (Food Safety Compliance System) portal of FSSAI and should ideally be initiated at least 30 days before the expiry date of the existing registration.",
           ].map((item, index) => (
             <div
               key={index}
@@ -706,39 +861,47 @@ content: (
 
       {/* Renewal Process */}
       <div>
-        <h3 className="text-xl font-semibold text-orange-600 mt-4 mb-6">
-          Renewal Process: How to Renew?
-        </h3>
+  <h3 className="text-xl font-semibold text-orange-600 mt-4 mb-6">
+    Renewal Process: How to Renew?
+  </h3>
 
-        <div className="space-y-4">
+  <div className="space-y-4">
 
-          {[
-            "Log in to the FoSCoS portal using your credentials.",
-            "Go to the renewal section.",
-            "Verify and update your business details.",
-            "Upload any newly required documents.",
-            "Pay the applicable renewal fee.",
-            "Submit the application for processing.",
-          ].map((step, index) => (
-            <div
-              key={index}
-              className="bg-orange-50 border border-orange-200 rounded-2xl p-5 shadow-md"
-            >
-              <div className="flex items-center gap-4">
+    {[
+      "Log in to the FoSCoS portal using your credentials.",
+      "Go to the renewal section.",
+      "Go to Dashboard > Renewal",
+      "Select Validity Period (1 to 5 Years)",
+      "Upload Required Documents",
+      "Make Payment Online",
+      "Submit Application & Note Reference Number",
+      "Inspection (If Applicable), FSSAI may conduct a site inspection before approval.",
+      "Download Renewed Food License Certificate."
+    ].map((step, index) => (
+      <div
+        key={index}
+        className="bg-orange-50 border border-orange-200 rounded-2xl p-5 shadow-md"
+      >
+        <div className="flex items-center gap-4">
 
-                <div className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-600 text-white font-semibold">
-                  {index + 1}
-                </div>
+          <div className="w-9 h-9 flex items-center justify-center rounded-full bg-orange-600 text-white font-semibold">
+            {index + 1}
+          </div>
 
-                <p className="text-gray-700">{step}</p>
-
-              </div>
-            </div>
-          ))}
+          <p className="text-gray-700">{step}</p>
 
         </div>
       </div>
+    ))}
 
+  </div>
+
+  {/* NOTE */}
+  <p className="mt-6 text-sm text-gray-600 italic">
+    <span className="text-blue-600 font-semibold">Note:</span> A late fee of ₹100 per day will be charged by the authority for a late application for renewal beyond 30 days prior to expiration.
+  </p>
+
+</div>
       {/* Documents for Renewal */}
       <div>
         <h3 className="text-xl font-semibold text-green-700 mt-4 mb-6">

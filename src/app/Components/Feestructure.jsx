@@ -70,7 +70,7 @@ export default function FeeStructure() {
     <section className="w-full py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
 
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+        <h2 className="text-3xl font-bold text-center text-green-500 mb-12">
           Fee Structure
         </h2>
 
@@ -141,12 +141,12 @@ export default function FeeStructure() {
 
         <div className="text-center mt-10">
           <p className="text-gray-700">
-            <a
+            <Link
               href="/contact-us"
-              className="font-semibold hover:text-orange-500"
+              className="font-semibold text-green-500 hover:text-orange-500"
             >
               Contact Us
-            </a>{""} for personalized assistance or to discuss custom requirements
+            </Link>{""} for personalized assistance or to discuss custom requirements
             and know more about the fee structure!
           </p>
         </div>
